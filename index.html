@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Aritmatika Sederhana</title>
+    <style>
+        body {
+            background-color: rgb(154, 223, 223);
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #005358;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+  <fieldset>
+    <legend>Aritmatika Sederhana</legend>
+
+    <label for="bil1">Input Bilangan 1:</label>
+    <input type="number" id="bil1" value="5"> <br>
+
+    <label for="bil2">Input Bilangan 2:</label>
+    <input type="number" id="bil2" value="8"> <br>
+
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">*</button>
+    <button onclick="hitung('/')">/</button> <br>
+
+    <label for="output">Output:</label>
+    <input type="text" id="output" readonly>
+
+    <script src="tugas3.js"></script>
+  </fieldset>
+</body>
+</html>
